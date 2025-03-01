@@ -10,4 +10,4 @@ jobs:
       - name: Get issue information
         run: echo "The issue title is ${{ github.event.issue.title }} and the body is ${{ github.event.issue.body }}"
       - name: Get all issue information
-        run: echo "All issue data ${{github.event.issue}}"
+        run: echo "All issue data ${{ toJson(github.event.issue) }}"
