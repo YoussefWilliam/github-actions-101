@@ -8,4 +8,13 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done -- I'm out, bye!"
+      - name: Run multiple times
+        run: |
+          echo "Lets start working together"
+          echo "thats the second time im calling you"
+          for i in 1 2 3 4 5
+          do
+            echo "This is the $i time I'm calling you"
+          done
+
         
